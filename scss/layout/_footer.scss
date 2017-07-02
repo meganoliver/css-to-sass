@@ -1,0 +1,54 @@
+/*Footer Style*/
+
+footer h3 {
+  margin: 0 auto;
+  display: inline;
+}
+
+#top {
+  text-align: right;
+  margin-right: 10px;
+}
+
+.main-footer {
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, $bg-lt-blue, $bg-blue);
+  height: 150px;
+  border-top: 1px solid lightgrey;
+  li {
+    @media #{$brk-narrow} {
+    background: none;
+    margin-top: 1em;
+    }
+  }
+}
+
+#top,
+#name {
+    display: inline-block;
+    margin-top: 1em;
+    font-weight: normal;
+}
+
+#top {
+  float: right;
+
+  @media #{$brk-narrow} {
+    display: none;
+  }
+}
+
+#name {
+  float: left;
+  margin-left: 1em;
+}
+
+#footer-nav {
+  display: none;
+
+  @media #{$brk-narrow} {
+    display: inline;
+    float: right;
+    margin: 0 auto;
+  }
+}

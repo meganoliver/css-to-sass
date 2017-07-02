@@ -1,0 +1,177 @@
+/*General Styling*/
+
+
+
+body {
+  @extend %center;
+  @extend %inline-block;
+  width: 100%;
+
+  @media #{$brk-narrow} {
+    width: 100%;
+    display: inline-block;
+  }
+
+  @media #{$brk-wide} {
+    width: 100%;
+  }
+}
+
+li {
+  @media #{$brk-narrow} {
+  float: left;
+  margin-left: 2px;
+  margin-right: 2px;
+  }
+}
+
+img {
+  width: 95%;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px #888;
+}
+
+p {
+  @extend %font;
+  padding: 1.5em;
+}
+
+h1{
+  @extend %font;
+  @include font-style(3em, bold, $purple);
+}
+
+h2{
+  @extend %font;
+  @include font-style(2em, bolder);
+  line-height: .5em;
+}
+
+h3{
+  @extend %font;
+  @include font-style(1.17em, bold, $purple);
+}
+
+a {
+  color: $purple;
+  text-decoration: none;
+  &:hover {
+    color: $yellow;
+  }
+  &:visited {
+    color: $purple;
+  }
+}
+
+body {
+  font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/*Body Style*/
+
+#profile-pic {
+  width: 200px;
+  height: 150px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+
+  @media #{$brk-narrow} {
+    float: right;
+  }
+}
+
+.introduction {
+  background-image: linear-gradient(to bottom, $bg-lt-blue, $bg-gray);
+  font-size: 1.5em;
+
+  @media #{$brk-narrow} {
+    display: inline-block;
+    float: left;
+    width: 100%;
+  }
+}
+
+.contact {
+  background-image: linear-gradient(to bottom, $bg-gray, $bg-lt-blue);
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#portfolio {
+  @extend %underline;
+  @extend %inline-block;
+  margin: 0 auto;
+  margin-bottom: .5em;
+  line-height: 1em;
+  width: 100%;
+}
+
+.skills {
+  @extend %inline-block;
+  width: 100%;
+  margin: 0 auto;
+  p{
+    @extend %center;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5em;
+  }
+}
+
+#skills {
+  @extend %underline;
+  @extend %inline-block;
+  width: 100%;
+}
+
+.portfolio,
+.skills-img {
+  @media #{$brk-narrow} {
+  width: 50%;
+  float: left;
+  }
+}
+
+.skills-img {
+  padding-bottom: 4em;
+
+}
+
+.portfolio {
+  p {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 5em;
+  }
+  @media #{$brk-wide} {
+    width: 33.33%;
+    float: left;
+  }
+}
+
+#contact {
+  @extend %underline;
+  @extend %inline-block;
+  width: 100%;
+
+}
+.contact p {
+  @extend %inline-block;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+#email,
+#phone {
+  margin: 0 auto;
+}
+
+
+/*Clear Fix*/
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}

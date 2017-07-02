@@ -1,0 +1,59 @@
+/*Header Styling*/
+
+ul {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+li {
+  padding: 5px 40px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background: $bg-blue;
+}
+
+.main-header {
+  background-image: linear-gradient(to top, $bg-lt-blue, $bg-blue);
+  margin: 0 auto;
+  border-bottom: 1px solid lightgrey;
+
+  @media #{$brk-wide} {
+    position: relative;
+    height: 150px;
+  }
+}
+
+.title {
+  margin: 0 auto;
+  padding-bottom: 35px;
+  padding-top: 15px;
+}
+
+.main-nav {
+  @media #{$brk-wide} {
+  float: right;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  }
+  li {
+  @media #{$brk-wide} {
+    background: none;
+    }
+  }
+}
+
+#megan {
+  @media #{$brk-wide} {
+  display: inline-block;
+  float: left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 0;
+  margin: .25em;
+  }
+}

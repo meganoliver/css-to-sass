@@ -1,0 +1,233 @@
+body, .skills p {
+  text-align: center; }
+
+body, #portfolio, .skills, #skills, #contact, .contact p {
+  display: inline-block; }
+
+p, h1, h2, h3 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+
+#portfolio, #skills, #contact {
+  text-decoration: underline; }
+
+/*General Styling*/
+body {
+  width: 100%; }
+  @media (min-width: 768px) {
+    body {
+      width: 100%;
+      display: inline-block; } }
+  @media (min-width: 1024px) {
+    body {
+      width: 100%; } }
+
+@media (min-width: 768px) {
+  li {
+    float: left;
+    margin-left: 2px;
+    margin-right: 2px; } }
+
+img {
+  width: 95%;
+  border-radius: 5%;
+  box-shadow: 5px 5px 10px #888; }
+
+p {
+  padding: 1.5em; }
+
+h1 {
+  font-size: 3em;
+  font-weight: bold;
+  color: mediumslateblue; }
+
+h2 {
+  font-size: 2em;
+  font-weight: bolder;
+  color: black;
+  line-height: .5em; }
+
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  color: mediumslateblue; }
+
+a {
+  color: mediumslateblue;
+  text-decoration: none; }
+  a:hover {
+    color: #ffff00; }
+  a:visited {
+    color: mediumslateblue; }
+
+body {
+  font: normal 1em/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/*Body Style*/
+#profile-pic {
+  width: 200px;
+  height: 150px;
+  margin-top: 15px;
+  margin-left: 15px;
+  margin-right: 15px; }
+  @media (min-width: 768px) {
+    #profile-pic {
+      float: right; } }
+
+.introduction {
+  background-image: linear-gradient(to bottom, aliceblue, rgba(204, 204, 204, 0));
+  font-size: 1.5em; }
+  @media (min-width: 768px) {
+    .introduction {
+      display: inline-block;
+      float: left;
+      width: 100%; } }
+
+.contact {
+  background-image: linear-gradient(to bottom, rgba(204, 204, 204, 0), aliceblue);
+  margin: 0 auto;
+  box-sizing: border-box; }
+
+#portfolio {
+  margin: 0 auto;
+  margin-bottom: .5em;
+  line-height: 1em;
+  width: 100%; }
+
+.skills {
+  width: 100%;
+  margin: 0 auto; }
+  .skills p {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.5em; }
+
+#skills {
+  width: 100%; }
+
+@media (min-width: 768px) {
+  .portfolio,
+  .skills-img {
+    width: 50%;
+    float: left; } }
+
+.skills-img {
+  padding-bottom: 4em; }
+
+.portfolio p {
+  margin: 0 auto;
+  padding-top: 0;
+  padding-bottom: 5em; }
+@media (min-width: 1024px) {
+  .portfolio {
+    width: 33.33%;
+    float: left; } }
+
+#contact {
+  width: 100%; }
+
+.contact p {
+  padding: 5px;
+  box-sizing: border-box; }
+
+#email,
+#phone {
+  margin: 0 auto; }
+
+/*Clear Fix*/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+/*Header Styling*/
+ul {
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 0;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif; }
+
+li {
+  padding: 5px 40px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  background: #3fbdbf; }
+
+.main-header {
+  background-image: linear-gradient(to top, aliceblue, #3fbdbf);
+  margin: 0 auto;
+  border-bottom: 1px solid lightgrey; }
+  @media (min-width: 1024px) {
+    .main-header {
+      position: relative;
+      height: 150px; } }
+
+.title {
+  margin: 0 auto;
+  padding-bottom: 35px;
+  padding-top: 15px; }
+
+@media (min-width: 1024px) {
+  .main-nav {
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 0; } }
+@media (min-width: 1024px) {
+  .main-nav li {
+    background: none; } }
+
+@media (min-width: 1024px) {
+  #megan {
+    display: inline-block;
+    float: left;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0;
+    margin: .25em; } }
+
+/*Footer Style*/
+footer h3 {
+  margin: 0 auto;
+  display: inline; }
+
+#top {
+  text-align: right;
+  margin-right: 10px; }
+
+.main-footer {
+  margin: 0 auto;
+  background-image: linear-gradient(to bottom, aliceblue, #3fbdbf);
+  height: 150px;
+  border-top: 1px solid lightgrey; }
+  @media (min-width: 768px) {
+    .main-footer li {
+      background: none;
+      margin-top: 1em; } }
+
+#top,
+#name {
+  display: inline-block;
+  margin-top: 1em;
+  font-weight: normal; }
+
+#top {
+  float: right; }
+  @media (min-width: 768px) {
+    #top {
+      display: none; } }
+
+#name {
+  float: left;
+  margin-left: 1em; }
+
+#footer-nav {
+  display: none; }
+  @media (min-width: 768px) {
+    #footer-nav {
+      display: inline;
+      float: right;
+      margin: 0 auto; } }
+
+/*# sourceMappingURL=application.css.map */
