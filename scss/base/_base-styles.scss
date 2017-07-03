@@ -5,16 +5,11 @@
 body {
   @extend %center;
   @extend %inline-block;
-  width: 100%;
 
   @media #{$brk-narrow} {
-    width: 100%;
     display: inline-block;
   }
 
-  @media #{$brk-wide} {
-    width: 100%;
-  }
 }
 
 li {
@@ -33,7 +28,6 @@ img {
 
 p {
   @extend %font;
-  padding: 1.5em;
 }
 
 h1{

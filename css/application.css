@@ -11,15 +11,9 @@ p, h1, h2, h3 {
   text-decoration: underline; }
 
 /*General Styling*/
-body {
-  width: 100%; }
-  @media (min-width: 768px) {
-    body {
-      width: 100%;
-      display: inline-block; } }
-  @media (min-width: 1024px) {
-    body {
-      width: 100%; } }
+@media (min-width: 768px) {
+  body {
+    display: inline-block; } }
 
 @media (min-width: 768px) {
   li {
@@ -31,9 +25,6 @@ img {
   width: 95%;
   border-radius: 5%;
   box-shadow: 5px 5px 10px #888; }
-
-p {
-  padding: 1.5em; }
 
 h1 {
   font-size: 3em;
